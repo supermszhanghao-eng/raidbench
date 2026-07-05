@@ -39,6 +39,12 @@ This can deploy as-is to Cloudflare Pages, GitHub Pages, Netlify, or Vercel stat
 
 See `DEPLOY.md`.
 
+## Traffic Validation
+
+Stage 4 analytics and Search Console setup notes live in `STAGE4_TRAFFIC_VALIDATION.md`.
+
+GA4 is configured in `config.js`. Leave `ga4MeasurementId` blank until the real Measurement ID exists.
+
 ## Legal Note
 
 RaidBench is an unofficial fan-made planning tool and is not affiliated with or endorsed by Facepunch Studios. All trademarks and game names belong to their respective owners.

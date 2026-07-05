@@ -79,6 +79,10 @@ const targetTable = document.querySelector("#target-table");
 
 const formatNumber = (value) => new Intl.NumberFormat("en-US").format(Math.round(value));
 
+function trackEvent(name, params = {}) {
+  window.RaidBenchAnalytics?.track(name, params);
+}
+
 function findTarget(targetId) {
   return targets.find((target) => target.id === targetId);
 }
@@ -146,16 +150,26 @@ function updateRaidTotals() {
   raidItems.textContent = formatNumber(totals.items);
   sulfurTotal.textContent = formatNumber(totals.sulfur);
   gunpowderTotal.textContent = formatNumber(totals.sulfur / 2);
+
+  return totals;
 }
 
 function addTarget() {
   const qty = Math.max(1, Math.min(99, Number(targetQty.value) || 1));
+  const target = findTarget(targetSelect.value);
   raidState.push({
     targetId: targetSelect.value,
     qty,
     method: methodSelect.value,
   });
   renderRaidList();
+  trackEvent("raid_add_target", {
+    target_id: targetSelect.value,
+    target_label: target?.label,
+    quantity: qty,
+    method: methodSelect.value,
+    rows: raidState.length,
+  });
 }
 
 document.querySelector("#add-target").addEventListener("click", addTarget);
@@ -163,13 +177,20 @@ document.querySelector("#add-target").addEventListener("click", addTarget);
 document.querySelector("#reset-raid").addEventListener("click", () => {
   raidState.splice(0, raidState.length);
   renderRaidList();
+  trackEvent("raid_reset");
 });
 
 raidList.addEventListener("click", (event) => {
   const button = event.target.closest(".remove-row");
   if (!button) return;
+  const removed = raidState[Number(button.dataset.index)];
   raidState.splice(Number(button.dataset.index), 1);
   renderRaidList();
+  trackEvent("raid_remove_target", {
+    target_id: removed?.targetId,
+    method: removed?.method,
+    rows: raidState.length,
+  });
 });
 
 const upkeepInputs = {
@@ -195,16 +216,29 @@ function updateUpkeep() {
 
 Object.values(upkeepInputs).forEach((input) => {
   input.addEventListener("input", updateUpkeep);
+  input.addEventListener("change", () => {
+    trackEvent("upkeep_input_change", {
+      resource: input.id.replace("-day", ""),
+      daily_value: Math.max(0, Number(input.value) || 0),
+    });
+  });
 });
 
 document.querySelector(".email-form").addEventListener("submit", (event) => {
   event.preventDefault();
   const input = document.querySelector("#email");
   if (!input.value) return;
+  const domain = input.value.includes("@") ? input.value.split("@").pop().toLowerCase() : "unknown";
   input.value = "";
   input.placeholder = "Saved locally for MVP demo";
+  trackEvent("email_interest_submit", {
+    email_domain: domain,
+  });
 });
 
 populateTargets();
 renderRaidList();
 updateUpkeep();
+trackEvent("calculator_ready", {
+  default_rows: raidState.length,
+});

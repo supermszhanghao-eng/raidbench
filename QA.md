@@ -121,3 +121,35 @@ Screenshots captured outside repo:
 
 - `/tmp/raidbench-guide-desktop.png`
 - `/tmp/raidbench-guide-mobile.png`
+
+## Stage 4 Traffic Instrumentation QA
+
+Status:
+
+```text
+Passed local instrumentation QA. Google account setup is still manual.
+```
+
+Implemented:
+
+- Added `config.js` for GA4 Measurement ID configuration.
+- Added `analytics.js` for GA4 loading and event buffering.
+- Added analytics scripts to homepage and all 10 guide pages.
+- Added calculator events for ready, add target, remove target, reset, upkeep changes, and interest email submits.
+- Added automatic click tracking for guide links and CTA links.
+- Added `STAGE4_TRAFFIC_VALIDATION.md` with Search Console, GA4, event taxonomy, and weekly decision rules.
+
+Checks completed:
+
+- JavaScript syntax passed for `app.js`, `analytics.js`, and `config.js`.
+- Parsed `index.html` plus 10 guide pages with Python `HTMLParser`.
+- Confirmed all 11 HTML pages include `config.js` and `analytics.js`.
+- Local HTTP checks passed on fixed port `4289`.
+- Playwright confirmed homepage events: `calculator_ready`, `raid_add_target`, and `upkeep_input_change`.
+- Playwright confirmed guide-page CTA event: `cta_click`.
+- Mobile guide page had no horizontal overflow and analytics object loaded.
+
+Known limitations:
+
+- GA4 will not send live events until a real `G-...` Measurement ID is added to `config.js`.
+- Search Console verification still requires the user's Google account and verification token or file.

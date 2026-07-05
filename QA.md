@@ -319,7 +319,7 @@ Known limitations:
 Status:
 
 ```text
-Cloudflare Pages deployment is live. Custom domain is added but waiting for DNS CNAME records.
+Passed Cloudflare Pages custom domain QA.
 ```
 
 Implemented:
@@ -327,6 +327,7 @@ Implemented:
 - Created Cloudflare Pages project `raidbench`.
 - Deployed the static site to Cloudflare Pages.
 - Added `raidbench.com` and `www.raidbench.com` as Pages custom domains.
+- Added Cloudflare DNS CNAME records for `raidbench.com` and `www.raidbench.com` pointing to `raidbench.pages.dev`.
 - Updated canonical URLs, `robots.txt`, `sitemap.xml`, and guide generator output to use `https://raidbench.com`.
 
 Checks completed:
@@ -336,8 +337,12 @@ Checks completed:
 - Parsed 27 HTML pages with `HTMLParser`.
 - Parsed `sitemap.xml`; it lists 27 unique URLs and all 27 use `https://raidbench.com`.
 - JavaScript syntax checks passed for `app.js`, `analytics.js`, `premium.js`, and `scripts/generate-guides.mjs`.
+- Cloudflare Pages API reports both `raidbench.com` and `www.raidbench.com` as `active`.
+- `https://raidbench.com/` returned HTTP 200.
+- `https://raidbench.com/pages/rust-armored-wall-raid-cost.html` returned HTTP 200.
+- `https://raidbench.com/sitemap.xml` returned HTTP 200.
+- `https://www.raidbench.com/` returned HTTP 200.
 
 Known limitations:
 
-- Cloudflare API reports both custom domains as pending with `CNAME record not set`.
-- Wrangler OAuth has Pages write access but not DNS write access, so DNS records must be added in the Cloudflare dashboard or with a DNS-edit API token.
+- GitHub Pages remains available as a fallback deployment, but canonical URLs now point to `https://raidbench.com`.

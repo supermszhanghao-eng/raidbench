@@ -45,6 +45,12 @@ Stage 4 analytics and Search Console setup notes live in `STAGE4_TRAFFIC_VALIDAT
 
 GA4 is configured in `config.js`. Leave `ga4MeasurementId` blank until the real Measurement ID exists.
 
+## Monetization Test
+
+Stage 5 notes live in `STAGE5_MONETIZATION_TEST.md`.
+
+The first offer page is `premium.html`. PayPal checkout remains disabled until `premiumOffer.paypalPaymentLink` is configured in `config.js`.
+
 ## Legal Note
 
 RaidBench is an unofficial fan-made planning tool and is not affiliated with or endorsed by Facepunch Studios. All trademarks and game names belong to their respective owners.

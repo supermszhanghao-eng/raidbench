@@ -490,6 +490,37 @@ th {
   padding: 14px;
 }
 
+.cta-box .monetization-link {
+  margin-top: 14px;
+}
+
+.monetization-band {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: center;
+  margin: 4px 0 34px;
+  padding: 24px;
+  border: 1px solid rgba(229, 162, 58, 0.35);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(229, 162, 58, 0.13), rgba(115, 214, 154, 0.06)),
+    var(--bg-soft);
+}
+
+.monetization-band h2 {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.monetization-band p {
+  max-width: 680px;
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .updates {
   display: grid;
   grid-template-columns: 1fr minmax(320px, 0.72fr);
@@ -612,6 +643,68 @@ th {
   margin-top: 18px;
 }
 
+.premium-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.34fr);
+  gap: 22px;
+  align-items: stretch;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(34, 42, 37, 0.94), rgba(25, 30, 27, 0.96));
+  box-shadow: var(--shadow);
+}
+
+.premium-hero h1 {
+  margin: 0;
+  max-width: 680px;
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.premium-hero p {
+  max-width: 690px;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.price-panel {
+  display: grid;
+  align-content: center;
+  min-height: 210px;
+  border: 1px solid rgba(229, 162, 58, 0.35);
+  border-radius: 8px;
+  background: rgba(229, 162, 58, 0.08);
+  padding: 22px;
+}
+
+.price-panel strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--amber-strong);
+  font-size: 58px;
+  line-height: 1;
+}
+
+.price-panel p,
+.status-note {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.premium-form {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.premium-form button {
+  width: fit-content;
+}
+
 .source-list a {
   color: var(--amber-strong);
   text-decoration: underline;
@@ -640,7 +733,9 @@ th {
   .tool-grid,
   .guide-band,
   .content-columns,
-  .updates {
+  .updates,
+  .premium-hero,
+  .monetization-band {
     grid-template-columns: 1fr;
   }
 
@@ -693,5 +788,13 @@ th {
   .secondary-action,
   .email-form button {
     width: 100%;
+  }
+
+  .premium-form button {
+    width: 100%;
+  }
+
+  .price-panel {
+    min-height: auto;
   }
 }

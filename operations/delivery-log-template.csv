@@ -1,0 +1,2 @@
+transaction_id,buyer_email,product_name,amount_usd,payment_provider,payment_status,purchased_at,delivered_at,delivery_method,delivery_target,accessed_at,refund_status,notes
+TEST-001,buyer@example.com,Rust Raid Prep Pack,9.00,PayPal,paid,2026-07-05T00:00:00Z,2026-07-05T00:10:00Z,email,buyer@example.com,,none,test row

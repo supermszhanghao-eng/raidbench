@@ -73,6 +73,8 @@
           track(isGuide ? "guide_link_click" : "cta_click", {
             link_text: visibleText(link).slice(0, 120),
             link_url: link.href,
+            offer_id: link.dataset.offerId,
+            price_usd: link.dataset.priceUsd,
           });
         }
         return;

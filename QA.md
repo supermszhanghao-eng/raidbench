@@ -153,3 +153,38 @@ Known limitations:
 
 - GA4 will not send live events until a real `G-...` Measurement ID is added to `config.js`.
 - Search Console verification still requires the user's Google account and verification token or file.
+
+## Stage 5 Monetization Test QA
+
+Status:
+
+```text
+Passed local pre-checkout monetization QA. Real payment is intentionally disabled.
+```
+
+Implemented:
+
+- Added `premium.html` for the $9 Rust Raid Prep Pack offer.
+- Added `premium.js` for checkout state, early-access form behavior, and premium events.
+- Added `premiumOffer` configuration in `config.js`.
+- Added premium links to the homepage navigation, database CTA, and monetization band.
+- Added `premium.html` to `sitemap.xml`.
+- Added `STAGE5_MONETIZATION_TEST.md` with PayPal setup, delivery record, and decision rules.
+
+Checks completed:
+
+- JavaScript syntax passed for `premium.js`.
+- Parsed `index.html`, `premium.html`, and 10 guide pages with Python `HTMLParser`.
+- Parsed `sitemap.xml`; it now lists 12 URLs and includes `premium.html`.
+- Local HTTP checks returned 200 for `/`, `/premium.html`, `/premium.js`, and `/sitemap.xml`.
+- Playwright confirmed homepage has a Premium navigation link and premium CTA.
+- Playwright confirmed premium page defaults to early-access mode when no PayPal link is configured.
+- Playwright confirmed premium events: `premium_offer_view`, `premium_interest_click`, `cta_click`, and `premium_interest_submit`.
+- Desktop and mobile premium page checks had no horizontal overflow.
+- Browser page errors were empty after fixing the PayPal URL check.
+
+Known limitations:
+
+- No real checkout is active until a PayPal Payment Link or Buy Button URL is added.
+- Early-access form stores no backend data; it only emits local/GA events for validation.
+- Real delivery automation is not built yet.

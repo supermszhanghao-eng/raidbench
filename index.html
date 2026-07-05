@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RaidBench - Rust Raid Cost & Upkeep Calculator</title>
+    <meta
+      name="description"
+      content="Fast Rust raid cost and base upkeep calculators with practical raid paths, material estimates, and beginner-friendly guide notes."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="RaidBench - Rust Raid Cost & Upkeep Calculator" />
+    <meta
+      property="og:description"
+      content="Estimate rockets, C4, satchels, explosive ammo, sulfur, and weekly upkeep for Rust base planning."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="RaidBench home">
+        <span class="brand-mark">RB</span>
+        <span>RaidBench</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#tools">Tools</a>
+        <a href="#guides">Guides</a>
+        <a href="#database">Database</a>
+        <a href="#updates">Updates</a>
+      </nav>
+      <a class="header-action" href="#raid-calculator">Open Calculator</a>
+    </header>
+
+    <main id="top">
+      <section class="tool-grid" id="tools" aria-label="Rust planning tools">
+        <article class="panel raid-panel" id="raid-calculator">
+          <div class="tool-intro">
+            <h1 id="hero-title">Rust raid cost and upkeep planning in one clean bench.</h1>
+            <p>
+              Estimate common raid paths, sulfur requirements, and weekly base upkeep before you
+              farm, scout, or commit to a target.
+            </p>
+          </div>
+          <div class="panel-heading">
+            <div>
+              <h2>Raid Cost Calculator</h2>
+              <p>Stack structures and compare sulfur burn by method.</p>
+            </div>
+            <button class="icon-button" id="reset-raid" type="button" aria-label="Reset raid calculator">
+              Reset
+            </button>
+          </div>
+
+          <div class="input-grid">
+            <label>
+              Target
+              <select id="target-select"></select>
+            </label>
+            <label>
+              Quantity
+              <input id="target-qty" type="number" min="1" max="99" value="1" />
+            </label>
+            <label>
+              Method
+              <select id="method-select">
+                <option value="rockets">Rockets</option>
+                <option value="c4">Timed Explosive Charges</option>
+                <option value="satchels">Satchel Charges</option>
+                <option value="explosiveAmmo">Explosive Ammo</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="add-row">
+            <button class="primary-action compact" id="add-target" type="button">Add target</button>
+            <span class="fineprint">Community estimates. Verify after major Rust patches.</span>
+          </div>
+
+          <div class="raid-list" id="raid-list" aria-live="polite"></div>
+
+          <div class="result-strip">
+            <div>
+              <span class="metric-label">Raid items</span>
+              <strong id="raid-items">0</strong>
+            </div>
+            <div>
+              <span class="metric-label">Sulfur estimate</span>
+              <strong id="sulfur-total">0</strong>
+            </div>
+            <div>
+              <span class="metric-label">Gunpowder equivalent</span>
+              <strong id="gunpowder-total">0</strong>
+            </div>
+          </div>
+        </article>
+
+        <div class="side-stack">
+          <figure class="hero-visual">
+            <img src="./assets/survival-base.png" alt="Original survival base landscape artwork" />
+          </figure>
+
+          <aside class="panel upkeep-panel" aria-labelledby="upkeep-title">
+            <div class="panel-heading">
+              <div>
+                <h2 id="upkeep-title">Upkeep Estimator</h2>
+                <p>Quick weekly material estimate for base planning.</p>
+              </div>
+            </div>
+
+            <div class="input-grid single">
+              <label>
+                Wood per day
+                <input id="wood-day" type="number" min="0" value="0" />
+              </label>
+              <label>
+                Stone per day
+                <input id="stone-day" type="number" min="0" value="2500" />
+              </label>
+              <label>
+                Metal fragments per day
+                <input id="metal-day" type="number" min="0" value="800" />
+              </label>
+              <label>
+                HQM per day
+                <input id="hqm-day" type="number" min="0" value="0" />
+              </label>
+            </div>
+
+            <div class="upkeep-results">
+              <div><span>Wood / week</span><strong id="wood-week">0</strong></div>
+              <div><span>Stone / week</span><strong id="stone-week">0</strong></div>
+              <div><span>Metal / week</span><strong id="metal-week">0</strong></div>
+              <div><span>HQM / week</span><strong id="hqm-week">0</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="guide-band" id="guides" aria-labelledby="guide-title">
+        <div class="section-head">
+          <h2 id="guide-title">Fast SEO guide starters</h2>
+          <p>These are the first pages to validate search demand before building accounts or payments.</p>
+        </div>
+        <div class="guide-list">
+          <a class="guide-item" href="#raid-chart">
+            <span>01</span>
+            <div>
+              <h3>Rust Raid Cost Chart</h3>
+              <p>Compare rockets, C4, satchels, and explosive ammo for common walls and doors.</p>
+            </div>
+          </a>
+          <a class="guide-item" href="#upkeep-basics">
+            <span>02</span>
+            <div>
+              <h3>Base Upkeep Basics</h3>
+              <p>Plan daily and weekly material needs before your tool cupboard runs dry.</p>
+            </div>
+          </a>
+          <a class="guide-item" href="#early-raid-paths">
+            <span>03</span>
+            <div>
+              <h3>Best Early-Game Raid Paths</h3>
+              <p>Simple path ideas for solos and duos without wasting sulfur on bad targets.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="content-columns" id="database">
+        <article id="raid-chart">
+          <h2>Raid cost chart</h2>
+          <p>
+            Start with the calculator above, then validate the final number in-game. This MVP keeps
+            estimates conservative and prioritizes search speed over deep simulation.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Target</th>
+                <th>Rockets</th>
+                <th>C4</th>
+                <th>Satchels</th>
+                <th>Explosive ammo</th>
+              </tr>
+            </thead>
+            <tbody id="target-table"></tbody>
+          </table>
+        </article>
+
+        <article id="upkeep-basics">
+          <h2>Upkeep basics</h2>
+          <p>
+            Use daily values from your tool cupboard, then multiply by seven for weekly planning.
+            The next version can add base templates, decay windows, and shareable plans.
+          </p>
+          <ul class="check-list">
+            <li>Keep one day of emergency upkeep before roaming or raiding.</li>
+            <li>Track stone and metal separately for honeycomb and doors.</li>
+            <li>Use weekly totals before committing to a larger footprint.</li>
+          </ul>
+        </article>
+
+        <article id="early-raid-paths">
+          <h2>Early-game raid paths</h2>
+          <p>
+            Early validation content should answer narrow searches: sheet door costs, garage door
+            choices, stone-wall math, and when rockets beat satchels.
+          </p>
+          <div class="cta-box">
+            <h3>Paid feature later</h3>
+            <p>
+              If this gets usage, the first paid test can be a $7 base plan pack or a credit-based
+              custom raid planner.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="updates" id="updates">
+        <div>
+          <h2>Validation mode</h2>
+          <p>
+            This MVP is built to test search traffic and tool usage first. Payments, accounts, and
+            credits come after the tool proves repeat value.
+          </p>
+        </div>
+        <form class="email-form">
+          <label for="email">Get update notes</label>
+          <div>
+            <input id="email" type="email" placeholder="you@example.com" />
+            <button type="submit">Notify me</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>RaidBench is an unofficial fan-made planning tool and is not affiliated with or endorsed by Facepunch Studios.</p>
+      <p>All trademarks and game names belong to their respective owners.</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

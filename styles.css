@@ -388,6 +388,10 @@ select:focus {
   gap: 12px;
 }
 
+.compact-list {
+  margin-top: 14px;
+}
+
 .guide-item {
   display: grid;
   grid-template-columns: 52px 1fr;
@@ -519,6 +523,27 @@ th {
   margin: 8px 0 0;
   color: var(--muted);
   line-height: 1.6;
+}
+
+.lab-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  margin: 0 0 38px;
+  padding: 24px;
+  border: 1px solid rgba(115, 214, 154, 0.32);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(115, 214, 154, 0.1), rgba(229, 162, 58, 0.07)),
+    var(--bg-soft);
+}
+
+.lab-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
 }
 
 .updates {
@@ -735,8 +760,13 @@ th {
   .content-columns,
   .updates,
   .premium-hero,
-  .monetization-band {
+  .monetization-band,
+  .lab-band {
     grid-template-columns: 1fr;
+  }
+
+  .lab-actions {
+    justify-content: stretch;
   }
 
   .hero-visual {

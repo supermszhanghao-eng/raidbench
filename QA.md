@@ -211,3 +211,37 @@ Known limitations:
 - No D1/Postgres database is provisioned yet.
 - No PayPal webhook endpoint is deployed yet.
 - Credits must not be sold until cloud webhook and ledger idempotency are tested.
+
+## Stage 7 POE2 Route QA
+
+Status:
+
+```text
+Passed local POE2 lightweight route QA. No full planner is built.
+```
+
+Implemented:
+
+- Added `poe2.html` as the POE2 Lab hub.
+- Added four POE2 validation pages under `/pages/`.
+- Added homepage POE2 Lab entry.
+- Added POE2 URLs to `sitemap.xml`.
+- Added `STAGE7_POE2_ROUTE_PLAN.md`.
+
+Checks completed:
+
+- JavaScript syntax check passed.
+- Parsed `index.html`, `premium.html`, `poe2.html`, and 14 guide pages with Python `HTMLParser`.
+- Parsed `sitemap.xml`; it now lists 17 URLs, including 5 POE2 URLs.
+- Playwright confirmed homepage has a POE2 Lab entry.
+- Playwright confirmed `poe2.html` renders 4 validation links and loads analytics.
+- Playwright confirmed `poe2-build-planner-roadmap.html` renders the roadmap table.
+- Playwright confirmed POE2 guide clicks emit `guide_link_click`.
+- Desktop and mobile POE2 checks had no horizontal overflow.
+- Browser console and page errors were empty.
+
+Known limitations:
+
+- POE2 content is intentionally generic because Early Access balance changes frequently.
+- No passive tree renderer, item database, DPS simulator, or economy tracker is built.
+- Content should be refreshed against official POE2 sources before serious SEO expansion.

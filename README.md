@@ -51,6 +51,14 @@ Stage 5 notes live in `STAGE5_MONETIZATION_TEST.md`.
 
 The first offer page is `premium.html`. PayPal checkout remains disabled until `premiumOffer.paypalPaymentLink` is configured in `config.js`.
 
+## Cloud And Credits
+
+Cloud hosting notes live in `CLOUD_HOSTING_OPTIONS.md`.
+
+Stage 6 credits planning lives in `STAGE6_CREDITS_SYSTEM_PLAN.md`.
+
+Production should not run from the local Mac. The local `4289` server is development preview only.
+
 ## Legal Note
 
 RaidBench is an unofficial fan-made planning tool and is not affiliated with or endorsed by Facepunch Studios. All trademarks and game names belong to their respective owners.

@@ -188,3 +188,26 @@ Known limitations:
 - No real checkout is active until a PayPal Payment Link or Buy Button URL is added.
 - Early-access form stores no backend data; it only emits local/GA events for validation.
 - Real delivery automation is not built yet.
+
+## Stage 6 Credits And Cloud Readiness QA
+
+Status:
+
+```text
+Planning and schema preflight complete. No real credits or cloud backend are enabled yet.
+```
+
+Implemented:
+
+- Added `CLOUD_HOSTING_OPTIONS.md` to document cheap cloud paths and the no-local-production rule.
+- Added `STAGE6_CREDITS_SYSTEM_PLAN.md` for credit package, ledger, API, and launch-gate rules.
+- Added `cloud/api-contract.md` for future API endpoints.
+- Added `cloud/credits-schema.sql` for a server-side credit ledger schema.
+- Added `cloud/wrangler.example.toml` as a Cloudflare Workers/D1 deployment template.
+
+Known limitations:
+
+- No cloud provider account is connected yet.
+- No D1/Postgres database is provisioned yet.
+- No PayPal webhook endpoint is deployed yet.
+- Credits must not be sold until cloud webhook and ledger idempotency are tested.

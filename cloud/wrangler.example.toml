@@ -1,0 +1,12 @@
+name = "raidbench-api"
+main = "src/worker.js"
+compatibility_date = "2026-07-05"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "raidbench"
+database_id = "replace-with-cloudflare-d1-id"
+
+[vars]
+APP_ENV = "production"
+PAYPAL_WEBHOOK_ID = "replace-in-cloudflare-dashboard"

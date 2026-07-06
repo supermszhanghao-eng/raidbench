@@ -4,6 +4,6 @@ window.RAIDBENCH_CONFIG = {
   premiumOffer: {
     offerId: "raid-prep-pack-9",
     paypalPaymentLink: "",
-    contactEmail: "",
+    contactEmail: "support@raidbench.com",
   },
 };

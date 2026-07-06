@@ -376,8 +376,40 @@ Checks completed:
 Known limitations:
 
 - These pages are a launch-validation baseline, not legal advice or attorney-reviewed documents.
-- `support@raidbench.com` must be created and monitored before enabling real payments.
+- `support@raidbench.com` now routes through Cloudflare Email Routing to `superms123@gmail.com`.
 - A real checkout link is still not enabled.
 - PayPal Business remains the fastest validation path because the account flow is already in progress.
 - Stripe is better for a controlled checkout and future credit ledger once a backend exists.
 - Lemon Squeezy, Paddle, and Creem are worth revisiting if Merchant of Record tax handling becomes more important than checkout control.
+
+## Support Email Routing QA
+
+Status:
+
+```text
+Passed Cloudflare Email Routing setup checks.
+```
+
+Implemented:
+
+- Added `superms123@gmail.com` as a verified Cloudflare Email Routing destination.
+- Added an enabled route rule for `support@raidbench.com`.
+- Forwarded `support@raidbench.com` to `superms123@gmail.com`.
+- Enabled Email Routing for `raidbench.com`.
+- Added `operations/support-email-routing.md` as the support inbox operating record.
+- Updated `config.js`, payment setup notes, and legal pages to use `support@raidbench.com`.
+
+Checks completed:
+
+- Cloudflare Email Routing status returned `ready`.
+- Destination address returned verified.
+- Route rule returned enabled.
+- Public DNS resolves Cloudflare MX records for `raidbench.com`.
+- Public DNS resolves Cloudflare SPF and DKIM TXT records.
+- JavaScript syntax checks passed for `app.js`, `analytics.js`, `premium.js`, and `config.js`.
+- Parsed the legal pages and premium page with Python `HTMLParser`.
+
+Known limitations:
+
+- Direct SMTP delivery from the local Mac was rejected by Cloudflare due to residential sender IP reverse lookup.
+- A final real-world inbox test should be sent from Gmail, Outlook, or another normal mailbox to confirm arrival in `superms123@gmail.com`.

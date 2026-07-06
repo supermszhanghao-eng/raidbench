@@ -43,7 +43,7 @@ Price: USD 9.00
 Type: Digital product / no physical shipping
 Delivery promise: Manual email delivery within 24 hours
 Refund note: Refund available if the file was not delivered or is unusable
-Support email: your support email
+Support email: support@raidbench.com
 ```
 
 Use a PayPal-hosted Payment Link first. Do not build API checkout until the offer has real demand.
@@ -57,7 +57,7 @@ window.RAIDBENCH_CONFIG = {
   premiumOffer: {
     offerId: "raid-prep-pack-9",
     paypalPaymentLink: "https://www.paypal.com/...",
-    contactEmail: "support@example.com"
+    contactEmail: "support@raidbench.com"
   }
 };
 ```

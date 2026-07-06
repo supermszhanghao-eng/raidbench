@@ -54,7 +54,7 @@ For PayPal, keep delivery evidence:
 
 ## Open Questions
 
-- Which support email will be monitored for `support@raidbench.com`?
+- Should `support@raidbench.com` continue forwarding to `superms123@gmail.com`, or move to a shared mailbox later?
 - Is the first product a one-time PDF/CSV pack, or will it become credits?
 - Should buyers receive a download link, email attachment, or account-based delivery?
 

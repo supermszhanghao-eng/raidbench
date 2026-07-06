@@ -346,3 +346,38 @@ Checks completed:
 Known limitations:
 
 - GitHub Pages remains available as a fallback deployment, but canonical URLs now point to `https://raidbench.com`.
+
+## Compliance Pages And Payment Provider QA
+
+Status:
+
+```text
+Passed local baseline compliance-page QA. Not lawyer-reviewed.
+```
+
+Implemented:
+
+- Added `privacy.html` for baseline privacy disclosure.
+- Added `terms.html` for baseline terms of service.
+- Added `refund-policy.html` for baseline refund rules.
+- Added legal footer links to the homepage, premium page, POE2 page, and all guide pages.
+- Updated `scripts/generate-guides.mjs` so generated guide pages keep the legal footer links.
+- Added privacy, terms, and refund policy URLs to `sitemap.xml`.
+- Added `operations/payment-provider-research.md` comparing PayPal Business, Stripe, Lemon Squeezy, Paddle, and Creem.
+
+Checks completed:
+
+- JavaScript syntax checks passed for `app.js`, `analytics.js`, `premium.js`, and `scripts/generate-guides.mjs`.
+- Parsed 30 HTML pages with Python `HTMLParser`.
+- Parsed `sitemap.xml`; it now lists 30 unique URLs.
+- Confirmed `sitemap.xml` includes `privacy.html`, `terms.html`, and `refund-policy.html`.
+- Confirmed all 30 HTML pages include footer links to Privacy, Terms, and Refund Policy.
+
+Known limitations:
+
+- These pages are a launch-validation baseline, not legal advice or attorney-reviewed documents.
+- `support@raidbench.com` must be created and monitored before enabling real payments.
+- A real checkout link is still not enabled.
+- PayPal Business remains the fastest validation path because the account flow is already in progress.
+- Stripe is better for a controlled checkout and future credit ledger once a backend exists.
+- Lemon Squeezy, Paddle, and Creem are worth revisiting if Merchant of Record tax handling becomes more important than checkout control.

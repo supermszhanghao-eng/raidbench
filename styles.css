@@ -581,6 +581,21 @@ th {
   margin: 0;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--text);
+}
+
 .article-main {
   width: min(920px, calc(100% - 32px));
   padding: 34px 0 54px;

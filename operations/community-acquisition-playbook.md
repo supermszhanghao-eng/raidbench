@@ -163,3 +163,10 @@ Codex should not:
 - Send unsolicited DMs.
 - Hide commercial interest.
 - Promise official game support or guaranteed outcomes.
+
+## Rule References
+
+- Reddit Rules: participate authentically, follow community rules, and do not spam or manipulate content.
+- Reddit self-promotion guidance: do not start by submitting your own links; keep own-content links as a minority of participation.
+- Steam Online Conduct: commercial activity and advertisements are prohibited behavior.
+- Discord Community Guidelines: unsolicited bulk messages, self-bots, and inauthentic engagement are prohibited.

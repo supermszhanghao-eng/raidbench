@@ -1,0 +1,47 @@
+[
+  {
+    "game": "Path of Exile 2",
+    "track": "poe2",
+    "status": "active",
+    "priority": 1,
+    "score": 117,
+    "paidProducts": 5,
+    "updateTriggers": 5
+  },
+  {
+    "game": "Rust",
+    "track": "rust",
+    "status": "active",
+    "priority": 2,
+    "score": 102,
+    "paidProducts": 4,
+    "updateTriggers": 4
+  },
+  {
+    "game": "Palworld",
+    "track": "palworld",
+    "status": "next",
+    "priority": 3,
+    "score": 96,
+    "paidProducts": 4,
+    "updateTriggers": 5
+  },
+  {
+    "game": "Warframe",
+    "track": "warframe",
+    "status": "watchlist",
+    "priority": 4,
+    "score": 66,
+    "paidProducts": 3,
+    "updateTriggers": 4
+  },
+  {
+    "game": "Destiny 2",
+    "track": "destiny2",
+    "status": "watchlist",
+    "priority": 5,
+    "score": 63,
+    "paidProducts": 3,
+    "updateTriggers": 4
+  }
+]

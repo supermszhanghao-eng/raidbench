@@ -1,0 +1,135 @@
+[
+  {
+    "game": "Path of Exile 2",
+    "track": "poe2",
+    "priority": 1,
+    "status": "active",
+    "why": "High-complexity ARPG with builds, bosses, economy, loot filters, and frequent patch sensitivity. Good fit for paid audits and credits.",
+    "free_content": [
+      "starter build checks",
+      "outdated guide detection",
+      "boss prep checklists",
+      "loot filter setup",
+      "currency farming route scoring"
+    ],
+    "paid_products": [
+      "Build Audit",
+      "Boss Prep",
+      "Item Value Decision",
+      "Farming Route Score",
+      "Progression Plan"
+    ],
+    "update_triggers": [
+      "official patch notes",
+      "balance changes",
+      "economy shifts",
+      "popular build guide comments",
+      "Reddit and Steam discussion spikes"
+    ],
+    "risk": "High content volatility; avoid exact best-in-slot promises and bug-dependent advice."
+  },
+  {
+    "game": "Rust",
+    "track": "rust",
+    "priority": 2,
+    "status": "active",
+    "why": "Strong calculator/checklist fit. Raid cost, upkeep, wipe prep, and role sheets are evergreen enough for SEO and paid worksheets.",
+    "free_content": [
+      "raid cost calculators",
+      "door and wall cost guides",
+      "upkeep guides",
+      "solo and duo raid checklists"
+    ],
+    "paid_products": [
+      "Raid Prep Pack",
+      "Target Score Sheet",
+      "Sulfur Planning Worksheet",
+      "Upkeep Worksheet"
+    ],
+    "update_triggers": [
+      "official Rust news",
+      "Facepunch commit stream",
+      "wipe/meta changes",
+      "raid cost mechanic changes"
+    ],
+    "risk": "Medium volatility; numbers must be rechecked after major combat/building changes."
+  },
+  {
+    "game": "Palworld",
+    "track": "palworld",
+    "priority": 3,
+    "status": "next",
+    "why": "Large current player surge and survival/crafting complexity. Good fit for base, breeding, boss, build, and progression decision tools.",
+    "free_content": [
+      "best early progression checklist",
+      "base location decision guide",
+      "boss prep checklist",
+      "breeding and passive skill basics",
+      "resource route planner"
+    ],
+    "paid_products": [
+      "Base Optimization Audit",
+      "Boss Prep Plan",
+      "Breeding Goal Checklist",
+      "Progression Route Plan"
+    ],
+    "update_triggers": [
+      "official patch notes",
+      "major version releases",
+      "new pals or map changes",
+      "balance and AI fixes",
+      "community bug-fix discussions"
+    ],
+    "risk": "High during post-release updates; use versioned advice and avoid exploit-dependent content."
+  },
+  {
+    "game": "Warframe",
+    "track": "warframe",
+    "priority": 4,
+    "status": "watchlist",
+    "why": "Deep systems and persistent updates. Good paid angle for returning players, modding, farming, and progression plans, but requires strong domain accuracy.",
+    "free_content": [
+      "returning player checklist",
+      "modding basics",
+      "farming priority checklist",
+      "new player progression route"
+    ],
+    "paid_products": [
+      "Returning Player Plan",
+      "Build Fix",
+      "Farming Priority Score"
+    ],
+    "update_triggers": [
+      "official update notes",
+      "new frame or weapon releases",
+      "event rotations",
+      "balance changes"
+    ],
+    "risk": "High knowledge depth; start only after POE2/Rust/Palworld pipeline is stable."
+  },
+  {
+    "game": "Destiny 2",
+    "track": "destiny2",
+    "priority": 5,
+    "status": "watchlist",
+    "why": "Buildcrafting and activity prep can sell, but official API/game cycles and existing guide competition are heavy.",
+    "free_content": [
+      "returning player checklist",
+      "build readiness checklist",
+      "raid prep checklist",
+      "seasonal activity priority"
+    ],
+    "paid_products": [
+      "Build Readiness Audit",
+      "Raid Prep Plan",
+      "Returning Player Plan"
+    ],
+    "update_triggers": [
+      "official patch notes",
+      "season launches",
+      "sandbox changes",
+      "artifact/perk changes"
+    ],
+    "risk": "High competition and licensing/community expectations; keep on watchlist."
+  }
+]

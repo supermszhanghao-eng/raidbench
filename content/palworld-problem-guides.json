@@ -1,0 +1,237 @@
+[
+  {
+    "slug": "palworld-beginner-progression-checklist",
+    "title": "Palworld beginner progression checklist",
+    "description": "A practical Palworld beginner progression checklist for early survival, base setup, Pal capture, crafting, and boss readiness.",
+    "problem": "What should I do first in Palworld without wasting time?",
+    "shortAnswer": "A good Palworld start balances survival, base automation, capture coverage, and boss prep. Do not rush only combat or only base building; the fastest progress comes from a base that supplies your next capture and upgrade loop.",
+    "table": {
+      "headers": ["Stage", "Main goal", "Avoid"],
+      "rows": [
+        ["First base", "Food, beds, storage, basic production.", "Building too far from resources before you can move materials."],
+        ["Capture loop", "Get Pals for work suitability and combat coverage.", "Keeping only high-combat Pals and ignoring base workers."],
+        ["Crafting", "Unlock tools, weapons, armor, and transport upgrades.", "Spending resources on comfort before survival."],
+        ["Boss prep", "Bring damage, healing, and type coverage.", "Entering fights with random Pals and no plan."]
+      ]
+    },
+    "checklist": [
+      "Secure food and basic storage first.",
+      "Capture workers for gathering, handiwork, kindling, watering, and mining.",
+      "Upgrade transport before expanding too far.",
+      "Keep one combat team and one base team in mind.",
+      "Prepare for bosses with type coverage and recovery items."
+    ],
+    "example": "If your base cannot produce materials for spheres, ammo, or repairs, your exploration loop slows down even if your combat team is strong.",
+    "mistakes": [
+      "Moving base too early without resource planning.",
+      "Ignoring worker suitability.",
+      "Fighting bosses before the team has a clear role split.",
+      "Using every rare Pal in combat when one should be working at base."
+    ],
+    "related": ["palworld-base-location-checklist.html", "palworld-boss-prep-checklist.html", "palworld-resource-route-planner.html"],
+    "sources": ["Official Palworld Steam product information", "Official update history", "Community beginner progression questions"],
+    "monetization": "A paid Progression Route Plan can turn the player's level, base state, and goal into a short next-step plan."
+  },
+  {
+    "slug": "palworld-base-location-checklist",
+    "title": "Palworld base location checklist",
+    "description": "A Palworld base location checklist for choosing between resources, travel access, terrain, automation, and future expansion.",
+    "problem": "Where should I build my Palworld base?",
+    "shortAnswer": "A good Palworld base is not just pretty or central. It should reduce hauling, support automation, give enough flat space, and fit your next resource bottleneck.",
+    "table": {
+      "headers": ["Factor", "Good sign", "Warning sign"],
+      "rows": [
+        ["Resources", "Nearby materials match your current bottleneck.", "You constantly travel for basic inputs."],
+        ["Terrain", "Pals can path and work reliably.", "Workers get stuck or tasks fail repeatedly."],
+        ["Expansion", "Enough room for production, storage, and defenses.", "You must rebuild after every upgrade."],
+        ["Travel", "Useful access to exploration and boss goals.", "The base saves no travel time."],
+        ["Safety", "Manageable enemy pressure.", "Frequent interruptions slow production."]
+      ]
+    },
+    "checklist": [
+      "Write down your current resource bottleneck before moving.",
+      "Check whether Pals can path through the build area.",
+      "Leave room for production and storage expansion.",
+      "Do not pick only by scenery.",
+      "Review base location after major patches that affect pathing or resources."
+    ],
+    "example": "A scenic cliff base can look great but fail as a production base if workers cannot path cleanly to stations or resource nodes.",
+    "mistakes": [
+      "Moving before unlocking better transport.",
+      "Choosing a cramped base because it looks safe.",
+      "Ignoring pathing and automation reliability.",
+      "Building far from the resource you need most."
+    ],
+    "related": ["palworld-base-automation-scorecard.html", "palworld-resource-route-planner.html", "palworld-beginner-progression-checklist.html"],
+    "sources": ["Official Palworld Steam product information", "Official update history", "Community base building questions"],
+    "monetization": "A paid Base Optimization Audit can score the player's base location and next production bottleneck."
+  },
+  {
+    "slug": "palworld-base-automation-scorecard",
+    "title": "Palworld base automation scorecard",
+    "description": "A Palworld base automation scorecard for evaluating worker suitability, task bottlenecks, pathing, storage, and production flow.",
+    "problem": "Why is my Palworld base production slow?",
+    "shortAnswer": "Slow production usually comes from bad task fit, pathing friction, missing inputs, or scattered storage. Score the base by flow rather than adding more random workers.",
+    "table": {
+      "headers": ["Score area", "Question", "Fix"],
+      "rows": [
+        ["Worker fit", "Do Pals match the station tasks?", "Assign by work suitability, not rarity alone."],
+        ["Inputs", "Are materials waiting at the right place?", "Move storage closer to production loops."],
+        ["Pathing", "Do workers reach tasks without stalling?", "Simplify layout and remove blocked paths."],
+        ["Food/rest", "Are workers stopping too often?", "Improve food and rest support."],
+        ["Output", "Is production aligned with your next goal?", "Stop producing items you do not need soon."]
+      ]
+    },
+    "checklist": [
+      "Map the production chain from input to output.",
+      "Identify the one station that waits the most.",
+      "Check whether workers are stuck or switching tasks poorly.",
+      "Keep storage near the stations that use it.",
+      "Retest after patches that affect AI or pathing."
+    ],
+    "example": "Adding more workers may not help if the bottleneck is one missing input or a station placed where workers fail to reach it.",
+    "mistakes": [
+      "Using rare Pals for the wrong job.",
+      "Spreading storage across the base randomly.",
+      "Fixing output without checking input supply.",
+      "Ignoring worker pathing after rebuilding."
+    ],
+    "related": ["palworld-base-location-checklist.html", "palworld-resource-route-planner.html", "palworld-breeding-goal-checklist.html"],
+    "sources": ["Official Palworld Steam product information", "Official update history", "Community automation and pathing questions"],
+    "monetization": "A paid Base Optimization Audit can return a prioritized fix list for production bottlenecks."
+  },
+  {
+    "slug": "palworld-boss-prep-checklist",
+    "title": "Palworld boss prep checklist",
+    "description": "A Palworld boss prep checklist for team roles, type coverage, gear, recovery, movement, and attempt review.",
+    "problem": "How should I prepare for a Palworld boss fight?",
+    "shortAnswer": "A boss attempt needs team roles, type coverage, recovery, weapon readiness, and a clear failure review. Do not keep retrying with the same team if the problem is damage type, survivability, or movement timing.",
+    "table": {
+      "headers": ["Prep area", "Check", "Why it matters"],
+      "rows": [
+        ["Team roles", "Damage, tanking, support, and backup Pals.", "Random teams fail under pressure."],
+        ["Type coverage", "Pals and weapons fit the boss matchup.", "Wrong coverage makes the fight feel unfair."],
+        ["Gear", "Armor, weapons, ammo, and repairs are ready.", "Gear failure wastes attempts."],
+        ["Recovery", "Food and healing support are stocked.", "Long fights punish poor sustain."],
+        ["Review", "Record what caused the loss.", "Repeat deaths need a plan change."]
+      ]
+    },
+    "checklist": [
+      "Write down the boss problem before retrying.",
+      "Bring a team with clear roles.",
+      "Check gear durability and ammo before entering.",
+      "Change one variable after a failed attempt.",
+      "Do not rely on bug behavior for a paid strategy."
+    ],
+    "example": "If the boss repeatedly wins during one phase, the fix may be movement timing or type coverage rather than simply grinding more levels.",
+    "mistakes": [
+      "Retrying without reviewing the death cause.",
+      "Bringing underprepared gear.",
+      "Assuming higher rarity Pals automatically solve the fight.",
+      "Using bug-dependent tactics that may be patched."
+    ],
+    "related": ["palworld-beginner-progression-checklist.html", "palworld-resource-route-planner.html", "palworld-paid-product-menu.html"],
+    "sources": ["Official Palworld Steam product information", "Official update history", "Community boss-help questions"],
+    "monetization": "A paid Boss Prep Plan can convert player level, team, gear, and boss target into a short attempt checklist."
+  },
+  {
+    "slug": "palworld-breeding-goal-checklist",
+    "title": "Palworld breeding goal checklist",
+    "description": "A Palworld breeding goal checklist for deciding what Pal, passive traits, role, and production target you are actually trying to create.",
+    "problem": "How do I plan breeding in Palworld without wasting time?",
+    "shortAnswer": "Start breeding with a role goal, not a vague desire for a perfect Pal. Decide whether you need combat power, base work, movement, or a specific production role before spending time on trait combinations.",
+    "table": {
+      "headers": ["Goal", "What to define", "Bad shortcut"],
+      "rows": [
+        ["Combat", "Boss target, damage role, survivability.", "Only chasing rarity."],
+        ["Base work", "Work suitability and station role.", "Using combat traits for production."],
+        ["Movement", "Travel route and mount need.", "Optimizing a mount you rarely use."],
+        ["Collection", "Completion or personal preference.", "Pretending every collection goal is efficiency."]
+      ]
+    },
+    "checklist": [
+      "Choose one role for the breeding target.",
+      "List must-have traits separately from nice-to-have traits.",
+      "Stop if the target no longer supports your next goal.",
+      "Keep a simple record of parent lines.",
+      "Review after balance patches that affect traits or work roles."
+    ],
+    "example": "A base worker with strong combat traits may look impressive but still be worse than a worker bred for the exact station role.",
+    "mistakes": [
+      "Breeding without a role target.",
+      "Mixing combat and work goals too early.",
+      "Restarting the plan every time a new video appears.",
+      "Ignoring patch changes to traits or work behavior."
+    ],
+    "related": ["palworld-base-automation-scorecard.html", "palworld-boss-prep-checklist.html", "palworld-paid-product-menu.html"],
+    "sources": ["Official Palworld Steam product information", "Official update history", "Community breeding and passive-skill questions"],
+    "monetization": "A paid Breeding Goal Checklist can help the player define a practical target before spending time breeding."
+  },
+  {
+    "slug": "palworld-resource-route-planner",
+    "title": "Palworld resource route planner",
+    "description": "A Palworld resource route planner for deciding what to farm, where the bottleneck is, and when to move or automate production.",
+    "problem": "What resource should I farm next in Palworld?",
+    "shortAnswer": "The next resource should be the bottleneck blocking your next unlock, boss attempt, base upgrade, or capture loop. Farming everything equally feels productive but often delays the one upgrade that matters.",
+    "table": {
+      "headers": ["Goal", "Likely bottleneck", "Decision"],
+      "rows": [
+        ["Boss attempt", "Gear, ammo, recovery, team upgrades.", "Farm only what supports the attempt."],
+        ["Base upgrade", "Construction and station inputs.", "Check automation before manual farming."],
+        ["Capture loop", "Sphere materials and travel support.", "Farm inputs for repeated captures."],
+        ["Breeding", "Food, space, and parent tracking.", "Stabilize base support first."]
+      ]
+    },
+    "checklist": [
+      "Name the goal before farming.",
+      "Write the one missing material that blocks it.",
+      "Check whether base automation can solve it.",
+      "Plan a route that ends near storage or fast travel.",
+      "Re-score routes after map or resource updates."
+    ],
+    "example": "If your next goal is a boss attempt, farming building materials may be less useful than gathering the inputs for weapons, armor, ammo, or team upgrades.",
+    "mistakes": [
+      "Farming whatever is nearby without a target.",
+      "Ignoring fast travel and storage distance.",
+      "Manually farming a material your base could automate.",
+      "Expanding before solving the current bottleneck."
+    ],
+    "related": ["palworld-base-location-checklist.html", "palworld-base-automation-scorecard.html", "palworld-beginner-progression-checklist.html"],
+    "sources": ["Official Palworld Steam product information", "Official update history", "Community resource and progression questions"],
+    "monetization": "A paid Progression Route Plan can identify the player's next bottleneck and farming route."
+  },
+  {
+    "slug": "palworld-paid-product-menu",
+    "title": "Palworld paid product menu",
+    "description": "A draft Palworld paid product menu for base audits, boss prep, breeding goals, and progression route plans.",
+    "problem": "What Palworld services should RaidBench charge for?",
+    "shortAnswer": "The first Palworld paid products should be decision aids, not exploit guides or copied builds. The strongest paid angles are base optimization, boss prep, breeding target planning, and resource/progression routing.",
+    "table": {
+      "headers": ["Paid action", "Credits", "Output"],
+      "rows": [
+        ["Base Optimization Audit", "10", "Bottleneck, worker fit, pathing risk, next three fixes."],
+        ["Boss Prep Plan", "6", "Team role checklist, gear prep, and attempt review."],
+        ["Breeding Goal Checklist", "8", "Target role, must-have traits, and stop condition."],
+        ["Progression Route Plan", "12", "Next unlock, bottleneck, farming route, and base action."],
+        ["Resource Route Score", "5", "Fast route comparison for one material goal."]
+      ]
+    },
+    "checklist": [
+      "Keep outputs short and actionable.",
+      "State the game version and last checked date.",
+      "Do not sell exploit-dependent methods.",
+      "Offer a correction if RaidBench made a factual mistake.",
+      "Use Season Pass for ongoing update coverage."
+    ],
+    "example": "A player submits base screenshots and current goal. RaidBench returns the one bottleneck, one layout risk, one worker assignment fix, and one next material route.",
+    "mistakes": [
+      "Selling vague tips that free pages already explain.",
+      "Promising permanent validity across patches.",
+      "Charging for bug abuse advice.",
+      "Building a complex account system before one paid test works."
+    ],
+    "related": ["palworld-base-automation-scorecard.html", "palworld-boss-prep-checklist.html", "palworld-breeding-goal-checklist.html"],
+    "sources": ["Official Palworld Steam product information", "RaidBench payment and content loop"],
+    "monetization": "This is the Palworld paid offer backbone for future USD, EUR, and GBP credit packs."
+  }
+]

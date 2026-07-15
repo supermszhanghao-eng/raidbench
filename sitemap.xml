@@ -19,6 +19,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://raidbench.com/palworld.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://raidbench.com/privacy.html</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>yearly</changefreq>
@@ -224,6 +230,48 @@
   </url>
   <url>
     <loc>https://raidbench.com/pages/poe2-build-audit-product.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raidbench.com/pages/palworld-beginner-progression-checklist.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raidbench.com/pages/palworld-base-location-checklist.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raidbench.com/pages/palworld-base-automation-scorecard.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raidbench.com/pages/palworld-boss-prep-checklist.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raidbench.com/pages/palworld-breeding-goal-checklist.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raidbench.com/pages/palworld-resource-route-planner.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raidbench.com/pages/palworld-paid-product-menu.html</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
